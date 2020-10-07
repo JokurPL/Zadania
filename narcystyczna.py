@@ -1,3 +1,4 @@
+
 def potega(a, n):
     return a**n
 

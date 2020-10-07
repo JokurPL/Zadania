@@ -1,4 +1,4 @@
-word = "ABBCCCDDDDEEEEEFGGHIIJKKKL"
+word = input()
 
 def flamaster(word: str):
     letters = []
@@ -23,7 +23,5 @@ def flamaster(word: str):
         optimal_word += letter
 
     return optimal_word
-try:
+if not word.isnumeric():
     print(flamaster(word))
-except TypeError:
-    print("Input must be a string")
